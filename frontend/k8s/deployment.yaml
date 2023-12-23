@@ -17,7 +17,6 @@ spec:
       containers:
         - name: frontend
           image: $REGISTRY/$REPOSITORY:$IMAGE_TAG
-          # image: 345619025376.dkr.ecr.us-west-2.amazonaws.com/movie-picture-frontend-repo:${{ github.sha }}
           # # from primus learning
           imagePullPolicy: IfNotPresent   #Always
           ports:

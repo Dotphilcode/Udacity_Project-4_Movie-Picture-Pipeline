@@ -16,7 +16,6 @@ spec:
     spec:
       containers:
         - name: backend
-          # image: 345619025376.dkr.ecr.us-west-2.amazonaws.com/movie-picture-backend-repo:${{ github.sha }}
           image: $REGISTRY/$REPOSITORY:$IMAGE_TAG
           # # from primus learning
           imagePullPolicy: IfNotPresent   #Always
