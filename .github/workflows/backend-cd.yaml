@@ -107,5 +107,4 @@ jobs:
         run: kubectl cluster-info
       - name: Deploy to EKS
         run: |
-          kustomize edit set image backend=$REGISTRY/$REPOSITORY:$IMAGE_TAG
           kustomize build ./backend/k8s | kubectl apply -f -
