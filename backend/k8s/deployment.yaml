@@ -17,5 +17,7 @@ spec:
       containers:
         - name: backend
           image: 345619025376.dkr.ecr.us-west-2.amazonaws.com/movie-picture-backend-repo:${{ github.sha }}
+          # # from primus learning
+          imagePullPolicy: IfNotPresent   #Always
           ports:
             - containerPort: 5000
