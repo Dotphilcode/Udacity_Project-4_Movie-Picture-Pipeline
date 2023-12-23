@@ -125,4 +125,3 @@ jobs:
       - name: Deploy to EKS
         run: |
           kustomize build ./frontend/k8s | kubectl apply -f -
-# kubectl apply -k ./frontend/k8s
